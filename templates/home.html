@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>JibuBot MMUST - Your Campus Assistant</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Jibu<span>Bot</span> MMUST</a>
+        <nav>
+            <ul>
+                <li><a href="#" id="about-link">About</a></li>
+                <li><a href="{{url_for('login')}}" id="login-link">Logout</a></li>
+                <li><a href="{{url_for('training')}}" id="training-link">Training</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Your Intelligent Campus Assistant</h1>
+        <p>JibuBot MMUST is here to answer all your university-related questions, from course information to campus navigation and everything in between.</p>
+        <a href="{{url_for('chatbot')}}" class="btn" id="chatbot-link">Chat with JibuBot</a>
+        
+    </section>
+    
+    
+    <div class="container">
+        <div class="features">
+            <div class="feature-card">
+                <h3>24/7 Availability</h3>
+                <p>JibuBot is always available to assist you, day or night, whenever you need campus information.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Instant Answers</h3>
+                <p>Get immediate responses to your questions about courses, schedules, facilities, and more.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Personalized Help</h3>
+                <p>JibuBot learns from your interactions to provide more relevant and personalized assistance over time.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Modal -->
+    <div class="modal" id="about-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-about">&times;</span>
+            <h2>About JibuBot MMUST</h2>
+            <p>JibuBot MMUST is an intelligent virtual assistant designed specifically for Masinde Muliro University of Science and Technology students and staff.</p>
+            <p>Our mission is to make campus life easier by providing instant, accurate answers to your university-related questions. Whether you need information about courses, schedules, campus facilities, or administrative processes, JibuBot is here to help.</p>
+            <p>The chatbot uses natural language processing to understand your questions and provides responses based on the university's official information. It's constantly learning and improving to serve you better.</p>
+            <p>JibuBot is available 24/7 through this website, ensuring you can get help whenever you need it, wherever you are.</p>
+        </div>
+    </div>
+    
+    <!-- Login Modal -->
+   
+    
+</body>
+<script>
+    // Wait until the page is fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        const aboutLink = document.getElementById("about-link");
+        const aboutModal = document.getElementById("about-modal");
+        const closeBtn = document.getElementById("close-about");
+
+        // Show the modal
+        aboutLink.addEventListener("click", function (e) {
+            e.preventDefault(); // prevent the link from jumping
+            aboutModal.style.display = "block";
+        });
+
+        // Hide the modal on close
+        closeBtn.addEventListener("click", function () {
+            aboutModal.style.display = "none";
+        });
+
+        // Hide modal when clicking outside the content area
+        window.addEventListener("click", function (event) {
+            if (event.target === aboutModal) {
+                aboutModal.style.display = "none";
+            }
+        });
+    });
+</script>
+<footer>
+    <p>&copy; 2025 JibuBot MMUST. All rights reserved.</p>
+</footer>
+
+</html>

@@ -1,0 +1,590 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "Good morning",
+                "Good afternoon",
+                "Good evening"
+            ],
+            "responses": [
+                "Hello! Welcome to Masinde Muliro University of Science and Technology (MMUST). How can I help you?",
+                "Hi there! How can I assist you with MMUST-related queries?",
+                "Greetings! What would you like to know about MMUST?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "Goodbye",
+                "See you later",
+                "Exit",
+                "Quit"
+            ],
+            "responses": [
+                "Goodbye! Have a great day!",
+                "See you later! Feel free to ask if you have more questions about MMUST.",
+                "Thank you for visiting MMUST chatbot!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "Appreciate it",
+                "That's helpful"
+            ],
+            "responses": [
+                "You're welcome!",
+                "Happy to help!",
+                "Anytime! Let me know if you need more information."
+            ]
+        },
+        {
+            "tag": "about_mmust",
+            "patterns": [
+                "Tell me about Masinde Muliro University",
+                "What does MMUST stand for?",
+                "Overview of MMUST"
+            ],
+            "responses": [
+                "Masinde Muliro University of Science and Technology (MMUST) is a public university in Kenya, located in Kakamega Town. It was established in 1972 and named after the late Masinde Muliro, a Kenyan freedom fighter.",
+                "MMUST is a leading institution in science and technology education in Kenya, offering various undergraduate and postgraduate programs."
+            ]
+        },
+        {
+            "tag": "location",
+            "patterns": [
+                "Where is MMUST located?",
+                "What is the address of MMUST?",
+                "How do I get to MMUST?",
+                "MMUST location"
+            ],
+            "responses": [
+                "MMUST is located along Kakamega-Webuye Road in Kakamega Town, Kenya.",
+                "The main campus of Masinde Muliro University is in Kakamega, Western Kenya. The exact address is: Masinde Muliro University of Science and Technology, P.O. Box 190-50100, Kakamega, Kenya."
+            ]
+        },
+        {
+            "tag": "courses",
+            "patterns": [
+                "What courses does MMUST offer?",
+                "Programs at MMUST",
+                "List of degrees in MMUST",
+                "What can I study at MMUST?"
+            ],
+            "responses": [
+                "MMUST offers a wide range of programs including: \n- Bachelor of Science in Computer Science \n- Bachelor of Education \n- Bachelor of Business Administration \n- Bachelor of Engineering \n- Bachelor of Medicine and Surgery \n- And many more in sciences, arts, and technology fields.",
+                "You can study various undergraduate and postgraduate programs in Science, Technology, Education, Business, and Health Sciences at MMUST."
+            ]
+        },
+        {
+            "tag": "admission_requirements",
+            "patterns": [
+                "What are the admission requirements?",
+                "How do I join MMUST?",
+                "KCSE grade for MMUST",
+                "Entry requirements for MMUST"
+            ],
+            "responses": [
+                "Admission requirements vary by program. Generally: \n- For undergraduate: Minimum KCSE C+ or equivalent \n- For diploma: KCSE C- or equivalent \n- For postgraduate: Relevant bachelor's degree with at least Second Class Honors.",
+                "You need at least a KCSE C+ to qualify for most degree programs at MMUST. Specific programs may have higher requirements."
+            ]
+        },
+        {
+            "tag": "application_process",
+            "patterns": [
+                "How do I apply to MMUST?",
+                "Application procedure for MMUST",
+                "How to join MMUST",
+                "MMUST application"
+            ],
+            "responses": [
+                "You can apply to MMUST through: \n1. KUCCPS for government-sponsored programs \n2. Direct online application via MMUST website for self-sponsored programs \n3. Download application forms from the MMUST website.",
+                "Applications are done online via the MMUST website or through KUCCPS for government-sponsored students."
+            ]
+        },
+        {
+            "tag": "fees",
+            "patterns": [
+                "How do i get the fee structure for mmust",
+                "How much are fees at MMUST?",
+                "How much are tuition fees at MMUST",
+                "Cost of studying at MMUST"
+            ],
+            "responses": [
+                "Fees vary by program. Generally: \n- Government-sponsored: About KSh 16,000 per semester \n- Self-sponsored: KSh 45,000 - KSh 150,000 per semester depending on the course.",
+                "You can check the detailed fee structure on the MMUST website or contact the finance department for specific program fees."
+            ]
+        },
+        {
+            "tag": "contacts",
+            "patterns": [
+                "How can I contact MMUST?",
+                "MMUST phone number",
+                "MMUST email",
+                "MMUST contacts",
+                "how can i access more information about mmust"
+            ],
+            "responses": [
+                "You can contact MMUST through: \nPhone: +254 702 597 360 / +254 725 659 308 \nEmail: info@mmust.ac.ke \nWebsite: www.mmust.ac.ke",
+                "MMUST contacts: \nMain Line: 056-31375 \nEmail: info@mmust.ac.ke \nAddress: P.O. Box 190-50100, Kakamega, Kenya"
+            ]
+        },
+        {
+            "tag": "academic_calendar",
+            "patterns": [
+                "When does the academic year start?",
+                "MMUST academic calendar",
+                "Semester dates at MMUST",
+                "When is the next intake?"
+            ],
+            "responses": [
+                "MMUST follows a semester system: \n- September to December (1st Semester) \n- January to April (2nd Semester) \n- May to August (3rd Semester for some programs).",
+                "The main intakes are in September and January. Check the MMUST website for the exact academic calendar dates."
+            ]
+        },
+        {
+            "tag": "hostels",
+            "patterns": [
+                "Does MMUST have hostels?",
+                "Accommodation at MMUST",
+                "Where do MMUST students live?",
+                "Hostel fees at MMUST",
+                "How much do i pay for hostels in mmust"
+            ],
+            "responses": [
+                "Yes, MMUST has hostels with fees ranging from KSh 5,000 to KSh 15,000 per semester. There are also private hostels near the university.",
+                "MMUST provides both on-campus and off-campus accommodation options for students at varying costs."
+            ]
+        },
+        {
+            "tag": "scholarships",
+            "patterns": [
+                "Does MMUST offer scholarships?",
+                "Financial aid at MMUST",
+                "Bursaries in MMUST",
+                "How to get sponsorship at MMUST"
+            ],
+            "responses": [
+                "MMUST offers scholarships and bursaries to needy and bright students. You can apply through the Dean of Students' office.",
+                "There are various scholarship opportunities including government scholarships (HELB) and institutional bursaries at MMUST."
+            ]
+        },
+        {
+            "tag": "fallback",
+            "patterns": [],
+            "responses": [
+                "I'm sorry, I don't understand that. Could you rephrase your question about MMUST?",
+                "I'm not sure about that. Could you ask something else about Masinde Muliro University?",
+                "I don't have that information right now. Maybe ask about MMUST's courses, admission, or location?"
+            ]
+        },
+        {
+            "tag": "lecturer",
+            "patterns": [
+                "how many lecturers are in sci"
+            ],
+            "responses": [
+                "Currently, i only know of only 16 lecturers and five computer lab technicians in sci"
+            ]
+        },
+        {
+            "tag": "lec1",
+            "patterns": [
+                "Who is Dr Daniel Otanga",
+                "who is the sci dean",
+                "What is the name of the sci dean"
+            ],
+            "responses": [
+                "Dr Daniel Otanga is the current dean of students in the SCI fraternity. He is always available to help all students with any issues from fees arrears to just getting to know more about what he teaches."
+            ]
+        },
+        {
+            "tag": "lecturer_two",
+            "patterns": [
+                "Who is Dr. Jairus Odawa",
+                "Dr Odawa"
+            ],
+            "responses": [
+                "Dr. Odawa is a member of the sci lecturer fraternity and teaches various units ranging from systems analysis to human computer interactions"
+            ]
+        },
+        {
+            "tag": "lecturer_three",
+            "patterns": [
+                "Who is Dr. Dorothy Rambim",
+                " Dr Rambim"
+            ],
+            "responses": [
+                "Dr. Dorothy Rambim is one of the intellectual lecturers in the Sci University. She currently teaches computer science and ETS students."
+            ]
+        },
+        {
+            "tag": "Exams",
+            "patterns": [
+                "When do exams start",
+                "When do special examinations start",
+                "When do supplementary exams start"
+            ],
+            "responses": [
+                "Exams, following the main calendar, usually starts in April while special and supplementary examinations start on August."
+            ]
+        },
+        {
+            "tag": "directions",
+            "patterns": [
+                "how do i get to the library when i am currently at the main gate",
+                "where is the library"
+            ],
+            "responses": [
+                "Walk straight ahead along the pathway till you see a round-about on your right. Follow the path ahead till you reach the fountain. The building on the left is the library"
+            ]
+        },
+        {
+            "tag": "direction_one",
+            "patterns": [
+                "how do i get to the administration block when i am at the main gate",
+                "administration block"
+            ],
+            "responses": [
+                "From main gate walk straight along the paved pathway till you see a roundabout on your right, branch on your right after the round about and head straight and on your left you\u2019ll see a multi storey building with offices"
+            ]
+        },
+        {
+            "tag": "direction_two",
+            "patterns": [
+                "how do i get to the eca building when i am at the main gate",
+                "where is eca"
+            ],
+            "responses": [
+                "Go straight ahead along the pathway you\u2019ll see a rugby and football pitch, continue going straight and on your left you\u2019ll see a building with spiral ramp"
+            ]
+        },
+        {
+            "tag": "direction_three",
+            "patterns": [
+                "how do i get to mph from the main gate",
+                "Directions to the muti purpose hall from the main gate",
+                "where is mph"
+            ],
+            "responses": [
+                "From the gate follow the pathway on your left. You\u2019ll see a large building with glass wall on the front right next to the rugby field."
+            ]
+        },
+        {
+            "tag": "direction_four",
+            "patterns": [
+                "how do i get to the school of business and economics class when i am at the main gate.",
+                "where are the school of business classes"
+            ],
+            "responses": [
+                "Walk straight along the runway for about 6 minutes. You\u2019ll see a single storey building that is on your left (the building is directly opposite the lawn behind the library)"
+            ]
+        },
+        {
+            "tag": "male lecturer",
+            "patterns": [
+                "who is Dr Raphael Angulu",
+                "who is Angulu",
+                "who is Dr. Angulu"
+            ],
+            "responses": [
+                "Dr Raphael Angulu is a senior lecturer of the SCI fraternity. He currently teaches C, C++, Java and neural networks in SCI. He also is the current head of SIK and IT students in SCI."
+            ]
+        },
+        {
+            "tag": "hostel accommodation",
+            "patterns": [
+                "How do I apply for hostel accommodation",
+                "How do i get a hostel room",
+                "how do i apply for hostels in mmust"
+            ],
+            "responses": [
+                "Submit an online application via the MMUST student portal during the announced registration period. Ensure you meet deadlines and upload required documents."
+            ]
+        },
+        {
+            "tag": "hostel allocation",
+            "patterns": [
+                "Are hostels allocated on a first-come, first-served basis"
+            ],
+            "responses": [
+                "Priority is often given to first-year students, students with disabilities, and those from distant regions. Remaining spaces are allocated based on application timelines."
+            ]
+        },
+        {
+            "tag": "hostel roommate",
+            "patterns": [
+                "Can I choose my hostel or roommate"
+            ],
+            "responses": [
+                "Roommate requests may be considered during application, but final allocations depend on availability. Hostel assignments are managed by the Dean of Students\u2019 office."
+            ]
+        },
+        {
+            "tag": "hostel meals",
+            "patterns": [
+                "Do hostel fees include meals"
+            ],
+            "responses": [
+                "No, MMUST hostels are self-catering, students use nearby cafeterias to buy their meals.They can also pay for meal cards to get affordable meals in the school fraternity. visit the MCU building for more details on how to pay for meals"
+            ]
+        },
+        {
+            "tag": "hostel1",
+            "patterns": [
+                "Are there installment plans for hostel fees"
+            ],
+            "responses": [
+                "Full payment is typically required upfront. Contact the finance office for exceptions"
+            ]
+        },
+        {
+            "tag": "hostel facilities",
+            "patterns": [
+                "What facilities are in the hostels"
+            ],
+            "responses": [
+                "Hostels provide beds, mattresses, dustbins, curtains, study desks, shared bathrooms, and common rooms. Wi-Fi availability varies by block."
+            ]
+        },
+        {
+            "tag": "hostel2",
+            "patterns": [
+                "Is there 24/7 electricity and water in the hostels"
+            ],
+            "responses": [
+                "Basic utilities are provided, but occasional outages may occur. Report issues to the hostel caretaker."
+            ]
+        },
+        {
+            "tag": "hostel security",
+            "patterns": [
+                "How secure are the hostels in mmust"
+            ],
+            "responses": [
+                "Security guards and CCTV cameras monitor hostel premises. Students must sign in/out and adhere to curfew hours (10 PM)."
+            ]
+        },
+        {
+            "tag": "hostel3",
+            "patterns": [
+                "What if I lose my room key"
+            ],
+            "responses": [
+                "Report immediately to the hostel warden. Replacement keys incur a fee (approximately Ksh 1500)."
+            ]
+        },
+        {
+            "tag": "hostel visitations",
+            "patterns": [
+                "Are visitors allowed in hostels",
+                "Are guests allowed to enter hostel rooms"
+            ],
+            "responses": [
+                "Daytime visitors are permitted in common areas only, with prior approval from the warden"
+            ]
+        },
+        {
+            "tag": "hostel4",
+            "patterns": [
+                "Is alcohol allowed in hostels"
+            ],
+            "responses": [
+                "No. Alcohol, drugs, and smoking are strictly prohibited."
+            ]
+        },
+        {
+            "tag": "hostel_change",
+            "patterns": [
+                "Can I change my hostel after allocation"
+            ],
+            "responses": [
+                "Requests are considered only in exceptional cases (e.g., medical needs). Submit a formal appeal to the Dean of Students."
+            ]
+        },
+        {
+            "tag": "hostel6",
+            "patterns": [
+                "What if I\u2019m not assigned a hostel",
+                "what do i do when all hostels are fully booked"
+            ],
+            "responses": [
+                "Apply for off-campus housing. The university provides a list of approved lodgings nearby"
+            ]
+        },
+        {
+            "tag": "hostel_stay",
+            "patterns": [
+                "Can I stay during holidays",
+                "Can i stay in the hostels during the long holidays"
+            ],
+            "responses": [
+                "Hostels close during breaks. Special permission may be granted for academic/research purposes"
+            ]
+        },
+        {
+            "tag": "hostel7",
+            "patterns": [
+                "How far are hostels from lecture halls"
+            ],
+            "responses": [
+                "Most hostels are within a 10\u201315 minute walk from academic buildings."
+            ]
+        },
+        {
+            "tag": "hostel_available",
+            "patterns": [
+                "Are there hostel rooms for students with disabilities",
+                "Are there hostel rooms for disabled students",
+                "Are there hostel rooms for abled differently students",
+                "Can students who are abled differently access hostels",
+                "can disabled students get hostel rooms"
+            ],
+            "responses": [
+                "Yes. MMUST offers accessible rooms. Contact the Disability Services Office during application."
+            ]
+        },
+        {
+            "tag": "hostel_gender",
+            "patterns": [
+                "Are hostels mixed gender",
+                " can a lady and a man stay in one hostel room"
+            ],
+            "responses": [
+                "No. Hostels are gender-segregated."
+            ]
+        },
+        {
+            "tag": "hostel9",
+            "patterns": [
+                "Hostels",
+                "Name the hostels found on campus",
+                "How many hostels are found in mmust",
+                "How many hostels are there",
+                "Can you tell me how many hostels are in MMUST?",
+                "How many hostels does MMUST have",
+                "Could you list the number of hostels available at MMUST",
+                "Do you know how many hostels there are at MMUST",
+                "Please tell me the number of hostels in MMUST",
+                "How many student hostels can be found at MMUST",
+                "What\u00e2\u20ac\u2122s the count of hostels located within MMUST",
+                "I want to know how many hostels are present in MMUST",
+                "How many accommodation hostels exist in MMUST"
+            ],
+            "responses": [
+                "there are four student hostels in mmust namely Hall 1, Hall 2, Hall 3 and Hall 4. Each rooms in the different have varying prices, different accommodations and are located in different parts of the campus."
+            ]
+        },
+        {
+            "tag": "Fee_s",
+            "patterns": [
+                "fee balance",
+                "How do you check your fee balance",
+                "What steps do you take to view your fee balance",
+                "Can you guide me on how to access my fee balance",
+                "What's the process for checking my fee balance",
+                "Is there a way to see my outstanding fee balance",
+                "Where can I check my fee balance information",
+                "Can I be shown how to view my fee balance online",
+                "What's the procedure for looking up my fee balance",
+                "Can you tell me how to check my fee balance"
+            ],
+            "responses": [
+                "To check your fee balance, a student must visit the mmust students portal through the link portal.mmust.ac.ke and login to your account. In the students dashboard, click on the sidebar, click finance then click fees. you should find your fee balance there. You can also see the fee balance on the students dashboard"
+            ]
+        },
+        {
+            "tag": "course_change",
+            "patterns": [
+                "Can i change the course i was allocated to in mmust",
+                "Can i change courses"
+            ],
+            "responses": [
+                "A student can change the course he was allocated to only in first year. To do so , a student must first go and fill in the student form provided in orange house and if the student met all necessary requirements to join the course and the course is still taking in students, the student can successfully change his course. Note that not all courses take in students as they have reached the maximum number they can teach"
+            ]
+        },
+        {
+            "tag": "finance_office",
+            "patterns": [
+                "Where is the finance office"
+            ],
+            "responses": [
+                "The finance office is located at orange house(Administration Block)"
+            ]
+        },
+        {
+            "tag": "clinic",
+            "patterns": [
+                "Where is the school clinic located"
+            ],
+            "responses": [
+                "The school clinic is located between LBB and the auditorium (MEA). Just walk straight from the main gate  along the paved pathway for about 8 minutes and after reaching the LBB building , the building next to this is the clinic"
+            ]
+        },
+        {
+            "tag": "lbb",
+            "patterns": [
+                "where is lbb",
+                "where is lbb located"
+            ],
+            "responses": [
+                "Walk straight from the main gate for about 5 minutes. You should come across a junction and on your right there should be some kiosks and on your left there should be the school of business and economics offices and MEA or auditorium. The LBB building is the next big building you see just after the auditorium"
+            ]
+        },
+        {
+            "tag": "vice chancellor",
+            "patterns": [
+                "who is the current vice chancellor"
+            ],
+            "responses": [
+                "Professor Solomon Shibairo"
+            ]
+        },
+        {
+            "tag": "reporting",
+            "patterns": [
+                "How to check for units",
+                "How do i check for units in the mmust portal"
+            ],
+            "responses": [
+                "To check registered units at MMUST:Log in to MMUST Student Portal ,Go to Academic Records >units > Unit history > Select your year of study , View your units"
+            ]
+        },
+        {
+            "tag": "odel",
+            "patterns": [
+                "How to access mmust odel",
+                "How to login to mmust odel",
+                "how do i log in to mmust odel"
+            ],
+            "responses": [
+                "To access MMUST ODeL, visit https://odel.mmust.ac.ke/ for admissions and resources. Log in via https://mmust.mycportal.com/ or reset your password at https://elearning.mmust.ac.ke/login/forgot_password.php. Use the portal for academic materials, library access, and research. For support, email odel@mmust.ac.ke or studentsupport@mmust.ac.ke. Ensure you meet admission requirements before applying. Always log out after use for security."
+            ]
+        },
+        {
+            "tag": "mcu",
+            "patterns": [
+                "location of mcu"
+            ],
+            "responses": [
+                "Main catering Unit (MCU) is located near gate C."
+            ]
+        },
+        {
+            "tag": "steve",
+            "patterns": [
+                "who is steve"
+            ],
+            "responses": [
+                "Steve is a lecturer in mmust specifically in the deopartent of Computer Science"
+            ]
+        }
+    ]
+}

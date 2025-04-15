@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #training-result, #intent-result {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+        .error {
+            background-color: #f2dede;
+            color: #a94442;
+        }
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 100px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chatbot Training Interface</h1>
+    
+    <div class="section">
+        <h2>Retrain Model</h2>
+        <p>Click the button below to retrain the chatbot model with the current training data.</p>
+        <button id="retrain-btn">Retrain Model</button>
+        <div id="training-result"></div>
+    </div>
+    
+    <div class="section">
+        <h2>Add New Intent</h2>
+        <form id="intent-form">
+            <label for="tag">Intent Tag:</label>
+            <input type="text" id="tag" required>
+            
+            <label for="patterns">Patterns (one per line):</label>
+            <textarea id="patterns" required></textarea>
+            
+            <label for="responses">Responses (one per line):</label>
+            <textarea id="responses" required></textarea>
+            
+            <button type="submit">Add Intent</button>
+            <div id="intent-result"></div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('retrain-btn').addEventListener('click', function() {
+            const resultDiv = document.getElementById('training-result');
+            resultDiv.textContent = 'Training in progress...';
+            resultDiv.className = '';
+            
+            fetch('/retrain', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                resultDiv.textContent = data.message;
+                resultDiv.className = data.success ? 'success' : 'error';
+            })
+            .catch(error => {
+                resultDiv.textContent = 'Error: ' + error;
+                resultDiv.className = 'error';
+            });
+        });
+
+        document.getElementById('intent-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const resultDiv = document.getElementById('intent-result');
+            resultDiv.textContent = 'Processing...';
+            resultDiv.className = '';
+            
+            const tag = document.getElementById('tag').value;
+            const patterns = document.getElementById('patterns').value.split('\n').map(p => p.trim()).filter(p => p);
+            const responses = document.getElementById('responses').value.split('\n').map(r => r.trim()).filter(r => r);
+            
+            fetch('/add-intent', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    tag: tag,
+                    patterns: patterns,
+                    responses: responses
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                resultDiv.textContent = data.message;
+                resultDiv.className = data.success ? 'success' : 'error';
+                if (data.success) {
+                    document.getElementById('intent-form').reset();
+                }
+            })
+            .catch(error => {
+                resultDiv.textContent = 'Error: ' + error;
+                resultDiv.className = 'error';
+            });
+        });
+    </script>
+</body>
+</html>
